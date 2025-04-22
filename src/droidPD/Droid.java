@@ -199,7 +199,7 @@ public class Droid implements DroidInterface{
     knownMaze[currCords.getZ()][currCords.getY()][currCords.getX()].setMazeContent(maze.scanCurLoc(this));
     printMaze(maze);
     System.out.println("Start Coords: " + maze.getMazeStartCoord() + " Maze Depth: " + maze.getMazeDepth() + " Maze Dim: " + maze.getMazeDim());
-//    notifyListeners();
+    notifyListeners();
     printPath();
     
     return knownMaze;
